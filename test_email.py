@@ -1,18 +1,4 @@
-# import unittest
 
-# import send_inspiration
-# from mock import Mock
-
-
-# class TestEmail(unittest.TestCase):
-    
-#     def test_get_contacts(self):
-#         names = send_inspiration('To', 'From', 'Subject')
-#         self.assertEqual('thato','MY_ADDRESS', 'message') == True
-    
-#     #def test_main(self):
-
-#-------------------
 import smtplib,unittest
 from unittest import TestCase
 from unittest.mock import Mock
@@ -37,9 +23,7 @@ class Sending_email(unittest.TestCase):
             self.assertEqual(s.emails[0].msg, "Here's an ispiration quote for you!!!!")
             self.assertEqual(m.get_contacts) == False
             
-    def test_get_contacts(self):
-        names = send_inspiration('To', 'From', 'Subject')
-        self.assertEqual('thato','MY_ADDRESS', 'message') == False
+    
 
     def tearDown(self):
         self.emails = None
